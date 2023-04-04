@@ -1,14 +1,11 @@
-func solution(_ s:String) -> String {
-    
+func solution(_ s:String) -> String {   
     var arr = s.components(separatedBy:" ")
-    var lowercase = "abcdefghijklmnopqrstuvwxyz"
-    var uppercase = lowercase.uppercased()
-    
+ 
     for (i,value) in arr.enumerated() {
         var text = ""
         for (i,s) in Array(value).enumerated() {
             var str = String(s)
-            if i == 0 && (lowercase.contains(str) || uppercase.contains(str)) {
+            if i == 0 && s.isLetter {
                 str = str.uppercased()
             }else{
                 str = str.lowercased()
