@@ -7,14 +7,14 @@ func solution(_ n:Int) -> Int {
             if arr.count >= 2{
                 if arr.count - 2 >= 0 {
                     let value:Int = (lastValue + arr[arr.count - 2]) % 1234567
-                    arr.append(Int(value))
+                    arr.append(value)
                 }
            }
         }
     }
       
     if let lastValue = arr.last{
-        return lastValue % 1234567
+        return lastValue
     }else{
         return 0
     }
