@@ -5,7 +5,6 @@ func solution(_ citations:[Int]) -> Int {
     var hIndex:Int = 0
     var isCalc = true
     
-    
     while isCalc {
         var cnt = 0
         h += 1
