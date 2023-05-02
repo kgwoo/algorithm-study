@@ -22,6 +22,5 @@ func solution(_ s:String) -> [Int] {
             break
         }
     }
-    
     return [count, removedZeroCnt]
 }
